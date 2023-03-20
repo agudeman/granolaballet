@@ -29,7 +29,9 @@ body {
 .row {
     background-color: #c3e0cb;
     display: flex;
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .left-column {
