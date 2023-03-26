@@ -14,12 +14,6 @@ body {
     border: 20px solid #f3fdf5;
 }
 
-#icon {
-    width: 180px;
-    height: 180px;
-    margin-left: 95px;
-}
-
 #header {
     width: 520px;
     height: auto;
@@ -41,6 +35,7 @@ body {
     padding-right: 10px;
 }
 
+/* new web technique learned - transition color over links */
 .left-column a {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,6 +47,14 @@ body {
     display: block;
     background-color: #f3fdf5;
     padding: 5px;
+    transition: color 0.5s ease;
+}
+
+.left-column a:hover {
+    color: #e2e9df;
+    background-color: #46584a;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .left-column a:before { 
@@ -64,12 +67,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.left-column a:hover {
-    color: #4a3d3d;
-    font-weight: bolder;
-    font-style: italic;
 }
 
 .right-column {
@@ -256,20 +253,6 @@ li {
     list-style-type: circle;
 }
 
-.help ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
-    margin: 0 auto 0 auto;
-    background-color: #c3e0cb;
-    width: 70%;
-    padding-bottom: 8%;
-    overflow-x: auto;
-    white-space: nowrap;
-    clear: both;
-}
-
 .guac {
     font-weight: bolder;
     font-size: 16px;
@@ -295,4 +278,24 @@ li {
     margin-left: 35px;
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#icon {
+    width: 180px;
+    height: 180px;
+    margin-left: 95px;
+}
+
+.help ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 auto 0 auto;
+    background-color: #c3e0cb;
+    width: 70%;
+    padding-bottom: 8%;
+    overflow-x: auto;
+    white-space: nowrap;
+    clear: both;
 }
